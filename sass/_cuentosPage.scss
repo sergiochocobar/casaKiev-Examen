@@ -1,0 +1,53 @@
+.cuentos-box{
+    background-color: white;
+    margin: 30px 0;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    &:last-child{
+        margin-bottom: 0 ;
+    }
+    a{
+        font-weight: bold !important;
+        font-size: 20px;
+        color: #0095CF !important;
+        text-decoration: underline !important;
+        display: block;
+    }
+}
+
+.cuento-tiempo{
+    position: relative;
+}
+
+.cuento-tiempo-icon{
+    width: 60px;
+}
+
+span.tiempo{
+    color: orange;
+    position: absolute;
+    top: 23px;
+    right: 10px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 992px){
+    .cuentos-content{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 30px;  
+        margin-top: 50px;
+        
+    }
+    .cuentos-box{
+        padding: 50px;
+        margin: 0;
+    }
+}

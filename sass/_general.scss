@@ -1,0 +1,71 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    font-family: 'Oswald', sans-serif ;
+}
+
+h1,h2,h3,h4{
+    margin-bottom: 0;
+}
+
+
+ol,ul{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+a{
+    color: initial;
+
+    &:hover{
+        color: initial;
+        text-decoration: none;
+    }
+}
+
+.pages-bg{
+    background-image: url('../images/DSC_4729.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    height: fit-content;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.page-title{
+    background: white;
+    margin-top: 100px;
+    border-bottom: 5px solid #022356;
+    
+}
+
+.page-title-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0;
+    h2{
+        text-transform: uppercase;
+        color: #022356;
+    }
+}
+
+.page-title-icon{
+    height: 50px;
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 1200px){
+    .pages-bg{
+        height: 100vh;
+        overflow: auto;
+    }
+}
